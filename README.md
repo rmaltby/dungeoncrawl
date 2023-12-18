@@ -7,3 +7,5 @@ Original sources:
 - [Melle](https://opengameart.org/content/fantasy-sword-set)
 - [Chris Hamons](https://github.com/crawl/tiles)
 
+Uses [bracket-lib](https://docs.rs/bracket-lib/0.8.7/bracket_lib/all.html)=~0.8.1 crate as a game engine.
+Uses [legion](https://docs.rs/legion/0.4.0/legion/index.html)=0.3.1 crate as an ECS.
