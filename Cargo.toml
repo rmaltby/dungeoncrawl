@@ -1,7 +1,7 @@
 [package]
 
 name = "dungeoncrawl"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["Robert Maltby <bmaltby@gmail.com>"]
 edition = "2021"
 
