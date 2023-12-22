@@ -37,6 +37,7 @@ pub fn spawn_monster(ecs: &mut World, rng: &mut RandomNumberGenerator, pos: Poin
     ));
 }
 
+// not sure if this committed or not
 pub fn spawn_amulet_of_yala(ecs: &mut World, pos: Point) {
     ecs.push((
         Item,

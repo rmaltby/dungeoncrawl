@@ -39,6 +39,7 @@ pub struct Name(pub String);
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub struct ChasingPlayer;
 
+// not sure if this committed or not
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub struct Item;
 
