@@ -66,7 +66,7 @@ impl FieldOfView {
     pub fn clone_dirty(&self) -> Self {
         Self {
             visible_tiles: HashSet::new(),
-            radiu: self.radius,
+            radius: self.radius,
             is_dirty: true,
         }
     }
