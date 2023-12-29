@@ -44,6 +44,10 @@ impl State {
         // not sure if this committed or not
         spawn_amulet_of_yala(&mut ecs, map_builder.amulet_start);
         map_builder
+            .monster_spawns
+            .iter()
+            .for_each(|pos| spawn_monster(&mut ecs, &mut rng, *pos));
+        map_builder
             .rooms
             .iter()
             .skip(1)
@@ -68,6 +72,10 @@ impl State {
         let map_builder = MapBuilder::new(&mut rng);
         spawn_player(&mut self.ecs, map_builder.player_start);
         spawn_amulet_of_yala(&mut self.ecs, map_builder.amulet_start);
+        map_builder
+            .monster_spawns
+            .iter()
+            .for_each(|pos| spawn_monster(&mut self.ecs, &mut rng, *pos));
         map_builder
             .rooms
             .iter()
